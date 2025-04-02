@@ -1,0 +1,18 @@
+create database learning;
+use learning;
+
+create table register(username varchar(30) primary key,
+password varchar(30),
+contact varchar(12),
+email varchar(30),
+address varchar(40),
+usertype varchar(40));
+
+create table multiplechoice(assignment_id int, subject_name varchar(100), faculty_name varchar(50), question varchar(300),
+option_a varchar(100), option_b varchar(100),  option_c varchar(100),  option_d varchar(100), correct varchar(100));
+
+create table subjective(assignment_id int, subject_name varchar(100), faculty_name varchar(50), question varchar(500), answer varchar(300));
+
+create table marks(assignment_id varchar(30), student_name varchar(50), marks varchar(30), attempt_date varchar(30));
+
+create table student_answers(username varchar(30), assignment_id int, question varchar(500), answer varchar(300), student_answer  varchar(300));
